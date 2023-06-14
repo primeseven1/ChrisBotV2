@@ -1,0 +1,9 @@
+bin/chris_bot
+include/private/*.h
+include/dpp/*.h
+include/dpp/*.hpp
+include/dpp/**/*.hpp
+libdpp.so
+libdpp.so.10.0.24
+*.o
+*.gch
