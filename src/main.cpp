@@ -1,4 +1,5 @@
 #include <bot/pch.h>
+#include <bot/events.h>
 #include <bot/commands.h>
 #include <private/bot_info.h>
 
@@ -34,6 +35,7 @@ int main(int argc, char** argv)
         std::cout << "Ready! Logged in as: " << bot.me.username << "\nID:" << bot.me.id << std::endl;
     });
     bot.on_slashcommand(slash_command_event_handler);
+    bot.on_guild_member_add(guild_member_add_event_handler);
 
     srand(time(0));
 
