@@ -27,7 +27,6 @@ int main(int argc, char** argv)
     dpp::cluster bot(TOKEN);
 
     bot.on_log(dpp::utility::cout_logger());
-
     bot.on_ready([&bot, argc, argv](const dpp::ready_t& event) {
         if (dpp::run_once<struct register_bot_commands>())
             handle_command_line_args(argc, argv, bot);
@@ -35,6 +34,8 @@ int main(int argc, char** argv)
         std::cout << "Ready!" << std::endl;
     });
     bot.on_slashcommand(slash_command_event_handler);
+
+    srand(time(0));
 
     bot.start(dpp::st_wait);
     return 0;
