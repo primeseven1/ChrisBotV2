@@ -31,12 +31,13 @@ int main(int argc, char** argv)
         if (dpp::run_once<struct register_bot_commands>())
             handle_command_line_args(argc, argv, bot);
 
-        std::cout << "Ready!" << std::endl;
+        std::cout << "Ready! Logged in as: " << bot.me.username << "\nID:" << bot.me.id << std::endl;
     });
     bot.on_slashcommand(slash_command_event_handler);
 
     srand(time(0));
 
+    // dpp::st_wait in this context means this won't return
     bot.start(dpp::st_wait);
     return 0;
 }

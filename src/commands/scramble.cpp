@@ -5,12 +5,12 @@
 int scramble_command(const dpp::slashcommand_t& event)
 {
     char scramble_array[28];
+    memset(scramble_array, 0, sizeof(scramble_array));
     gen_moves(scramble_array, sizeof(scramble_array) - 1);
-    scramble_array[27] = '\0';
 
     char scramble_modifiers_array[28];
+    memset(scramble_modifiers_array, 0, sizeof(scramble_modifiers_array));
     gen_modifiers(scramble_modifiers_array, sizeof(scramble_modifiers_array) - 1);
-    scramble_modifiers_array[27] = '\0';
 
     std::string scramble = static_cast<std::string>(scramble_array);
     std::string modifers = static_cast<std::string>(scramble_modifiers_array);
@@ -21,6 +21,7 @@ int scramble_command(const dpp::slashcommand_t& event)
         full_scramble += scramble[i];
         full_scramble += modifers[i];
 
+        // Prevents double spaces if the modifier is a space
         if (modifers[i] != ' ')
             full_scramble += ' ';
     }

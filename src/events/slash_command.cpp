@@ -4,7 +4,7 @@
 void slash_command_event_handler(const dpp::slashcommand_t& event)
 {
     static std::unordered_map<std::string, std::function<int(const dpp::slashcommand_t&)>> command_map = {
-        { "ping", ping_command }, { "scramble", scramble_command }
+        { "ping", ping_command }, { "scramble", scramble_command }, { "coinflip", coin_flip }
     };
 
     std::string command_name = event.command.get_command_name();
