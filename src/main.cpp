@@ -36,6 +36,8 @@ int main(int argc, char** argv)
     });
     bot.on_slashcommand(slash_command_event_handler);
     bot.on_guild_member_add(guild_member_add_event_handler);
+    bot.on_guild_create(guild_create_event_handler);
+    bot.on_guild_delete(guild_delete_event_handler);
 
     srand(time(0));
 
