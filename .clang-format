@@ -1,0 +1,72 @@
+# Uses clang format 15
+
+BasedOnStyle: LLVM
+Language: Cpp
+
+IndentWidth: 4
+PointerAlignment: Left
+SortIncludes: Never
+ReferenceAlignment: Left
+AccessModifierOffset: -4
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: false
+AlignConsecutiveBitFields: true
+AlignConsecutiveMacros: true
+AlignConsecutiveDeclarations: false
+AlignEscapedNewlines: true
+AlignOperands: Align
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLambdasOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: Yes
+IndentCaseLabels: true
+BitFieldColonSpacing: Both
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterEnum: false
+  AfterNamespace: false
+  AfterClass: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterFunction: true
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  BeforeLambdaBody: true
+  BeforeWhile: false
+  AfterCaseLabel: false
+  AfterControlStatement: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+BreakBeforeBinaryOperators: None
+BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterColon
+BreakStringLiterals: true
+ColumnLimit: 130
+EmptyLineBeforeAccessModifier: LogicalBlock
+IndentExternBlock: NoIndent
+IndentGotoLabels: true
+IndentPPDirectives: None
+NamespaceIndentation: All
+QualifierAlignment: Custom
+QualifierOrder: [ 'static', 'inline', 'volatile', 'const', 'constexpr', 'type', 'restrict' ]
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyBlock: true

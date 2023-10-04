@@ -5,10 +5,10 @@ extern "C"
 {
 #endif
 
-#include <stdint.h>
+#include <types.h>
 
-void gen_moves(char* scramble_array, uint8_t scramble_length);
-void gen_modifiers(char* modifiers_array, uint8_t modifiers_array_length);
+void gen_moves(char* scramble_array, size_t scramble_length);
+void gen_modifiers(char* modifiers_array, size_t modifiers_array_length);
 
 #ifdef __cplusplus
 }

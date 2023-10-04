@@ -7,5 +7,5 @@
 #include <string>
 #include <map>
 #include <stdlib.h>
-#include <stdint.h>
+#include <types.h>
 #include <dpp/dpp.h>

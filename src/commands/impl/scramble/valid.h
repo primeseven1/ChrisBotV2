@@ -1,6 +1,5 @@
 #pragma once
 
-#include <stdbool.h>
-#include <stdint.h>
+#include <types.h>
 
-bool valid(char* scramble_array, uint8_t i);
+bool valid(char* scramble_array, size_t i);

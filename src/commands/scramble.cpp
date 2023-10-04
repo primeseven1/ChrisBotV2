@@ -16,8 +16,7 @@ int scramble_command(const dpp::slashcommand_t& event)
     std::string modifers = static_cast<std::string>(scramble_modifiers_array);
     std::string full_scramble;
 
-    for (size_t i = 0; i < sizeof(scramble_array) - 1; i++)
-    {
+    for (size_t i = 0; i < sizeof(scramble_array) - 1; i++) {
         full_scramble += scramble[i];
         full_scramble += modifers[i];
 

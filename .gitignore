@@ -1,9 +1,11 @@
-bin/chris_bot
+chris_bot
 include/private/*.h
-include/dpp/*.h
-include/dpp/*.hpp
-include/dpp/**/*.hpp
+include/dpp
 libdpp.so
-libdpp.so.10.0.24
+libdpp.so.10.0.26
 *.o
 *.gch
+pkgconfig
+cmake
+.vscode
+*.d
