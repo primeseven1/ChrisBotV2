@@ -24,5 +24,3 @@ Style
     struct some_struct some_struct = { .a = 0, .b = 0, .c = 0 };
 ```
 - Just pick whatever one is more readable depending on the situation
-
-- If you can use C, preferably use C, main reason being C++ is much slower when compiling, this may change if the precompiled header actually did something to make it faster, maybe I'm doing something wrong, and if I am, I have no idea what I'm doing wrong, so maybe that's an idea for something to contribute!
