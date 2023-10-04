@@ -23,7 +23,7 @@ endif
 all: $(OUTPUT)
 
 $(OUTPUT): ./include/bot/pch.h.gch $(CXX_OBJ) $(C_OBJ)
-	$(LD) $(LD_FLAGS) $(CXX_OBJ) $(C_OBJ) -o $(OUTPUT) -O2
+	$(LD) $(LD_FLAGS) $(CXX_OBJ) $(C_OBJ) -o $(OUTPUT)
 
 -include $(CXX_DEPENDENCIES) $(C_DEPENDENCIES)
 
