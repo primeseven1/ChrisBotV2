@@ -4,7 +4,7 @@ LD = gcc
 
 C_FLAGS = -g -I ./include -MMD -MP
 CXX_FLAGS = -g -I ./include -std=c++17 -MMD -MP
-LD_FLAGS = -L ./lib -lstdc++ -Wl,-rpath=../lib -ldpp
+LD_FLAGS = -L ./lib -lstdc++ -Wl,-rpath=./lib -ldpp
 
 CXX_SRC := $(shell find ./src/ -type f -name *.cpp)
 CXX_OBJ := $(patsubst %.cpp, %.o, $(CXX_SRC))
